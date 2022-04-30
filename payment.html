@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--  <link href="css/bootstrap.min.css" rel="stylesheet">
+     Appel de la Feuille de style minifiée De l'extension Datepicker -->
+    <link rel="stylesheet"  href="css/bootstrap-datepicker.min.css">
+</head>
+<body>
+    <!-- Extension jquery -->
+    <script src="js/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
+    <!-- Extension DATEPICKER -->
+    <script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <!-- Noyau JavaScript de Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <div class="wrapper">
+        <h2>Detail de payement</h2>
+        <form method="Post">
+        <h4>Compte</h4>
+        <div class="input-group">
+            <div class="input-box">
+            <select>
+                <ul>
+                    <li class="logo"><a href="choixdelachambre.html">Retour</a></li>
+                    
+                </ul>  
+                <option value="" disabled selected>-- Civilité --</option>
+              <option>Mademoiselle</option>
+              <option>Madame</option>
+              <option>Monsieur</option> 
+              <option hidden>provigfgfghfhgghjghjghjghjghjghjghjghjghyghghjghghghh</option>
+            </select>
+            <i class="fa fa-user icon"></i>
+        </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Nom" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Prenom" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email @" required class="name">
+                <i class="fa fa-envelope"></i>
+    
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-box">
+				<h4>Date de naissance</h4>
+                <input type="text" placeholder="Jours" class="dob">
+                <input type="text" placeholder="Mois" class="dob">
+                <input type="text" placeholder="Annee" class="dob">
+
+                <div class="input-box">
+                    <h4>Genre</h4>
+                    <input type="radio" id="b1" name="gendar" checked class="radio">
+                    <label for="b1">Homme</label>
+                    <input type="radio" id="b2" name="gendar" class="radio">
+                    <label for="b2">Femme</label>
+                </div>
+            </div>
+            
+        </div>
+    </br>
+        <form method="Post">
+            <h4>Numéro de télephone</h4> <input type="number" step="9">
+        </br>
+        <div class="input-group">
+            <!--<div class="input-box">-->
+                <input type="text" placeholder="(+33) -- -- -- -- --" required class="name">
+               <!-- <i class="fa fa-user icon"></i>-->
+            </div>
+        </br>
+        <h4>Adresse</h4>
+        <div class="input-group">
+                    <input type="text" placeholder="Adresse" required class="name">
+               
+            </div>
+        </br>
+        <h4>Code/postal</h4>
+        <div class="input-group">
+            <input type="text" placeholder="" required class="name">
+       
+    </div>
+    
+</br>
+<h4>Etat/Province</h4>
+<div class="input-group">
+    <input type="text" placeholder="" required class="name">
+    <select name="pays">
+    <option value="France" selected="selected">France </option>
+    <option value="Afghanistan">Afghanistan </option>
+    <option value="Afrique_Centrale">Afrique_Centrale </option>
+    <option value="Afrique_du_sud">Afrique_du_Sud </option>
+    <option value="Albanie">Albanie </option>
+    <option value="Algerie">Algerie </option>
+    <option value="Allemagne">Allemagne </option>
+    <option value="Andorre">Andorre </option>
+    <option value="Angola">Angola </option>
+</select>
+
+    </div>
+    </br>
+    <h4>Ville</h4>
+<div class="input-group">
+    <input type="text" placeholder="" required class="name">
+
+    </div>
+	
+	<div class="input-group">
+            <div class="input-box">
+                <h4>Details de payement</h4>
+                <input type="radio" name="pay" id="bc1" checked class="radio">
+                <label for="bc1"><span><i class="fa fa-cc-visa"></i>Visa</span></label>
+                <input type="radio" name="pay" id="bc2" class="radio">
+                <label for="bc2"><span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="tel" placeholder="Card Number" required class="name">
+            <i class="fa fa-credit-card icon"></i>
+        </div>
+
+        <div class="input-group">
+            <div class="input-box">
+                <input type="tel" placeholder="Card CVC" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input-box">
+                <select>
+                  <option value="" disabled selected>Mois</option>
+                  <option>Janv</option>
+                  <option>Fevr</option> 
+                  <option>Mars</option> 
+                  <option>Avril</option>
+                  <option>Mai</option> 
+                  <option>Juin</option> 
+                  <option>Juil</option>
+                  <option>Aout</option> 
+                  <option>Sept</option> 
+                  <option>Oct</option>
+                  <option>Nov</option> 
+                  <option>Dec</option> 
+                </select>
+                <select>
+                    <option value="" disabled selected>Annee</option>
+                    <option>2022</option> 
+                    <option>2023</option> 
+                    <option>2024</option>
+                    <option>2025</option>
+                  </select>
+            </div>
+        </div>
+		<button id="myButton" type="button" class="submit-button" onclick="réservationconfirmée.html">Payer Maintenant</button>
+        <script  type="text/javascript"> 
+
+            document.getElementById("myButton").onclick = function () {
+                    location.href = "réservationconfirmée.html";
+                };
+                </script>
+
+            
+    </div>
+   
+    </div>
+                    
+        </div>
+
+            </body>
+            <br/>
+            <footer>
+                <h2 id="contact">Contactez-nous</h2> 
+                <form class="classForm">
+                    <input placeholder="Nom">
+                    <input placeholder="E-mail @" type="email" required>
+                    <textarea placeholder="Votre message ici..."></textarea>
+                    <button>Envoyer</button>
+                </form>
+                <div id="deuxiemeTrait" ></div>
+                <div id="copyrightEtIcons">
+                  <div id="copyright">
+                <!-- <span>© fromScratch();
+                     2020</span> -->  
+                </div>
+                <div id="icons">
+                    <a href="http://
+                    www.twitter.fr"><i class="fa fa-twitter"></i></a>
+                    <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>   
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a> 
+                    <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+                </div>    
+                    
+                    </div>
+             </footer>
+
+</html>
+  

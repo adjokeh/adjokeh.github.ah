@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title> Atypique House </title>
+        
+        <link rel="stylesheet" href="Style.css" >
+        <link rel="stylesheet" href="choixdelachambre.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo"><a href="choixdelachambre.html">Retour</a></li>
+                    
+                </ul>  
+                <ul  class="division" id="text">
+                    <li class="logo"><a href="#langue">Langue</a></li>
+                </ul>
+            
+            </nav>
+        </header>
+        <section class="presentation">
+                                        <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                  <div class="numbertext">1 / 2</div>
+                                  <img src="media/img5.jpg" style="width:100%">
+                                  <p class="paragraph">
+                                    Appréciez le confort de notre chambre classique, design et entièrement équipée pour votre confort: lit Simple ou Lit Double, mini-bar, TV écran plat, Wi-Fi très haut débit offert.
+                                </p>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">2 / 3</div>
+                                  <img src="media/sb3.jpg" style="width:100%">
+                                 
+                                  <p class="paragraph">
+                                    Appréciez le confort de notre chambre classique, design et entièrement équipée pour votre confort: lit Simple ou Lit Double, mini-bar, TV écran plat, Wi-Fi très haut débit offert.
+                                </p>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">3 / 3</div>
+                                  <img src="media/pt4.jpg" style="width:100%">
+                                  
+                                  <p class="paragraph">
+                                    Appréciez le confort de notre chambre classique, design et entièrement équipée pour votre confort: lit Simple ou Lit Double, mini-bar, TV écran plat, Wi-Fi très haut débit offert.
+                                </p>
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+                                
+                                </div>
+                                <br>
+                                
+                                <div style="text-align:center">
+                                  <span class="dot" onclick="currentSlide(1)"></span> 
+                                  <span class="dot" onclick="currentSlide(2)"></span> 
+                                  <span class="dot" onclick="currentSlide(3)"></span> 
+                                </div>
+
+                                
+
+        </section>
+        <br/>
+        <div style="text-align: center;">
+            <button id="myButton" type="button" class="float-right submit-button" onclick="payment.html">Confirmer</button>
+            <button id="cancelButton" type="button" class="float-right submit-button">Annuler</button>
+        </div>
+        
+		<script  type="text/javascript"> 
+
+            document.getElementById("myButton").onclick = function () {
+                    location.href = "payment.html";
+                };
+
+            document.getElementById("cancelButton").onclick = function () {
+                location.href = "choixdelachambre.html";
+            };
+            
+			let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+		</script>
+	</body>
+     <footer>
+        <h2 id="contact">Contactez-nous</h2> 
+        <form>
+            <input placeholder="Nom">
+            <input placeholder="E-mail @" type="email" required>
+            <textarea placeholder="Votre message ici..."></textarea>
+            <button>Envoyer</button>
+        </form>
+        <div id="deuxiemeTrait" ></div>
+        <div id="copyrightEtIcons">
+          <div id="copyright">
+        <!-- <span>© fromScratch();
+             2020</span> -->  
+        </div>
+        <div id="icons">
+            <a href="http://
+            www.twitter.fr"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>   
+            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a> 
+        </div>    
+            
+            </div>
+     </footer>
+    
+</html>
